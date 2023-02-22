@@ -9,7 +9,7 @@ yum install nodejs -y &>>${log_file}
 status_check $?
 
 print_head "Create Roboshop file"
-useradd roboshop &>>${log_file}
+useradd Roboshop &>>${log_file}
 status_check $?
 
 print_head "Create application directory"
