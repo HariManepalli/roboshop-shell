@@ -20,5 +20,3 @@ print_head "Start MongoDB Service"
 systemctl restart mongod &>>${log_file}
 status_check $?
 
-
-# update /etc/mongodb.conf file from 127.0.0.1 to 0.0.0.0-completed
