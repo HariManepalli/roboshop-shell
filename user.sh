@@ -46,11 +46,11 @@ print_head "Reload SystemD"
 systemctl daemon-reload &>>${log_file}
 status_check $?
 
-print_head "Enable User service"
+print_head "Enable Catalogue service"
 systemctl enable user &>>${log_file}
 status_check $?
 
-print_head "Restart user service"
+print_head "Restart Catalogue service"
 systemctl restart user &>>${log_file}
 status_check $?
 
